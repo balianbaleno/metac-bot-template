@@ -95,6 +95,8 @@ class Q1TemplateBot(ForecastBot):
 
             Question:
             {question}
+
+            Try to find out the base rate (historical rate) of the similar events in the question occuring 
             """
         )
         if use_open_router:
@@ -172,6 +174,7 @@ class Q1TemplateBot(ForecastBot):
             (b) The status quo outcome if nothing changed.
             (c) A brief description of a scenario that results in a No outcome.
             (d) A brief description of a scenario that results in a Yes outcome.
+            (e) Please consider historical base rate. If you are not sure, make a guess!
 
             You write your rationale remembering that good forecasters put extra weight on the status quo outcome since the world changes slowly most of the time.
 
